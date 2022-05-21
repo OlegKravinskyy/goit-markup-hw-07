@@ -746,6 +746,10 @@ ol {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.modal-close-btn:hover .modal-close-icon {
+  fill: var(--logo-color-left);
+}
+
 .modal-title {
   font-weight: 700;
   font-size: 20px;
@@ -835,6 +839,7 @@ ol {
   letter-spacing: 0.06em;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px 55px;
 
   color: var(--logo-color-two);
   background: var(--logo-color-left);
