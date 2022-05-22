@@ -243,7 +243,7 @@ ol {
     url(../images/hero-img.jpg);
 }
 
-.section--mod {
+.section--two {
   padding-bottom: 0;
 }
 
@@ -271,43 +271,43 @@ ol {
   display: flex;
 }
 
-.section-three-img:not(:last-child) {
+.section--three__img:not(:last-child) {
   margin-right: 30px;
 }
 
-.section-for {
+.section--four {
   background-color: var(--section-team-color);
 }
 
-.section-for-list {
+.section--four__list {
   display: flex;
   margin-left: -30px;
 }
 
-.section-for-img {
+.section--four__img {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
 }
 
-.img-block {
+.section--four__img-block {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.section-for-img {
+.section--four__img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--logo-color-two);
 }
 
-.team-soc-list {
+.section--four__soc-list {
   display: flex;
   justify-content: center;
 }
 
-.team-soc-link {
+.section--four__soc-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -317,7 +317,7 @@ ol {
     fill var(--main-transition-time) var(--cubic);
 }
 
-.team-soc-item + .team-soc-item {
+.section--four__soc-item + .section--four__soc-item {
   margin-left: 10px;
 }
 
@@ -325,11 +325,11 @@ ol {
   fill: var(--color-icon);
 }
 
-.team-soc-link:hover {
+.section--four__soc-link:hover {
   background-color: var(--logo-color-left);
 }
 
-.team-soc-link:hover .team-soc-icon {
+.section--four__soc-link:hover .section__soc-icon {
   fill: var(--logo-color-two);
 }
 
@@ -382,7 +382,7 @@ ol {
   background-color: var(--btn-hover-color);
 }
 
-.section-about {
+.section__title-about {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -392,7 +392,7 @@ ol {
   color: var(--secondary-color);
 }
 
-.section-for-header {
+.section--four__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -403,7 +403,7 @@ ol {
   color: var(--secondary-color);
 }
 
-.section-three {
+.section--three {
   display: block;
   font-weight: 700;
   font-size: 36px;
@@ -413,7 +413,7 @@ ol {
   color: var(--secondary-color);
 }
 
-.section-img-text {
+.section__img-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -424,7 +424,7 @@ ol {
   color: var(--logo-color-two);
 }
 
-.section-three-img {
+.section--three__img {
   position: relative;
   line-height: 0;
 }
@@ -441,7 +441,7 @@ ol {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.section-for {
+.section--four {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -454,7 +454,7 @@ ol {
   background-color: var(--section-team-color);
 }
 
-.section-for-name {
+.section--four__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -464,7 +464,7 @@ ol {
   color: var(--secondary-color);
 }
 
-.section-for-text {
+.section--four__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -474,7 +474,7 @@ ol {
   color: var(--main-color);
 }
 
-.section-for-sign {
+.section--four__sign {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -655,6 +655,7 @@ ol {
 .footer-social {
   margin-left: 70px;
 }
+
 .footer-social-join {
   font-weight: 700;
   line-height: 1.14;
@@ -664,7 +665,7 @@ ol {
   color: var(--logo-color-two);
 }
 
-.team-soc-link {
+.section--four__soc-link {
   display: flex;
   justify-content: center;
   align-items: center;
