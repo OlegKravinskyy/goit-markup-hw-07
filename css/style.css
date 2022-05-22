@@ -196,17 +196,17 @@ ol {
   padding-bottom: 94px;
 }
 
-.section-list {
+.section__list {
   width: calc(100% / 4 - 30px);
   display: flex;
   justify-content: space-between;
 }
 
-.section-item:not(:last-child) {
+.section__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.section-pictures {
+.section__pictures {
   width: 270px;
   height: 120px;
   display: flex;
@@ -243,11 +243,11 @@ ol {
     url(../images/hero-img.jpg);
 }
 
-.modificator {
+.section--mod {
   padding-bottom: 0;
 }
 
-.section-two-text {
+.section__title {
   font-weight: 700;
   list-style-type: none;
   font-size: 14px;
@@ -257,7 +257,7 @@ ol {
   color: var(--secondary-color);
 }
 
-.section-two-text1 {
+.section__text {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -321,7 +321,7 @@ ol {
   margin-left: 10px;
 }
 
-.team-soc-icon {
+.section__soc-icon {
   fill: var(--color-icon);
 }
 
