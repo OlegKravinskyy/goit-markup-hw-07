@@ -42,8 +42,8 @@
   background-color: var(--logo-color-left);
   color: var(--logo-color-two);
   transition: background-color var(--main-transition-time) var(--cubic);
-}
 
-.hero__btn:hover {
-  background-color: var(--btn-hover-color);
+  &:hover {
+    background-color: var(--btn-hover-color);
+  }
 }

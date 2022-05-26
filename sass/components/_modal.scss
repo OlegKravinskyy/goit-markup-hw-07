@@ -26,10 +26,10 @@
   background-color: var(--logo-color-two);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-}
 
-.modal__close-btn:hover .modal__close-icon {
-  fill: var(--logo-color-left);
+  &:hover .modal__close-icon {
+    fill: var(--logo-color-left);
+  }
 }
 
 .modal__title {
@@ -57,14 +57,14 @@
   outline: none;
   cursor: pointer;
   transition: border-color var(--main-transition-time) var(--cubic);
-}
 
-.modal__input:focus {
-  border: 1px solid var(--logo-color-left);
-}
+  &:focus {
+    border: 1px solid var(--logo-color-left);
+  }
 
-.modal__input:focus + .modal__input-icon {
-  fill: var(--logo-color-left);
+  &:focus + .modal__input-icon {
+    fill: var(--logo-color-left);
+  }
 }
 
 .modal__label {
@@ -96,18 +96,18 @@
   border-radius: 4px;
   outline: none;
   transition: border-color var(--main-transition-time) var(--cubic);
-}
 
-.modal__comment-text:focus {
-  border-color: var(--logo-color-left);
-}
+  &:focus {
+    border-color: var(--logo-color-left);
+  }
 
-.modal__comment-text:placeholder {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+  &:placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
 
-  color: var(--color-placeholder);
+    color: var(--color-placeholder);
+  }
 }
 
 .modal__btn {
@@ -128,11 +128,11 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition: background-color var(--main-transition-time) var(--cubic);
-}
 
-.modal__btn:hover,
-.modal__btn:focus {
-  background-color: var(--btn-hover-color);
+  &:hover,
+  &:focus {
+    background-color: var(--btn-hover-color);
+  }
 }
 
 .modal__input-wrap {
@@ -174,6 +174,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .modal__input-check:checked + & {
+    background-color: #2196f3;
+    border: none;
+  }
 }
 
 .modal__check-icon {
@@ -192,11 +197,6 @@
 .modal__check-link {
   color: var(--logo-color-left);
   text-decoration: underline;
-}
-
-.modal__input-check:checked + .modal__check-text span {
-  background-color: #2196f3;
-  border: none;
 }
 
 .modal__input-check:checked + .modal__check-text .modal__check-icon {

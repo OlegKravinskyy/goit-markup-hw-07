@@ -65,10 +65,6 @@ ol {
   margin: 0;
 }
 
-.current {
-  color: var(--logo-color-left);
-}
-
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -167,6 +163,10 @@ ol {
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-right: 93px;
+  color: var(--logo-color-left);
+}
+
+.current {
   color: var(--logo-color-left);
 }
 
@@ -356,8 +356,7 @@ ol {
   transition: background-color var(--main-transition-time) var(--cubic);
 }
 
-.modal__btn:hover,
-.modal__btn:focus {
+.modal__btn:hover, .modal__btn:focus {
   background-color: var(--btn-hover-color);
 }
 
@@ -401,6 +400,11 @@ ol {
   justify-content: center;
 }
 
+.modal__input-check:checked + .modal__check-text span {
+  background-color: #2196f3;
+  border: none;
+}
+
 .modal__check-icon {
   fill: transparent;
 }
@@ -416,11 +420,6 @@ ol {
 .modal__check-link {
   color: var(--logo-color-left);
   text-decoration: underline;
-}
-
-.modal__input-check:checked + .modal__check-text span {
-  background-color: #2196f3;
-  border: none;
 }
 
 .modal__input-check:checked + .modal__check-text .modal__check-icon {
