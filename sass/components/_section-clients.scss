@@ -15,13 +15,13 @@
   cursor: pointer;
   transition: fill var(--main-transition-time) var(--cubic),
     border-color var(--main-transition-time) var(--cubic);
-}
 
-.section--clients__item:not(:last-child) {
-  margin-right: 30px;
-}
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 
-.section--clients__item:hover {
-  border-color: var(--logo-color-left);
-  fill: var(--logo-color-left);
+  &:hover {
+    border-color: var(--logo-color-left);
+    fill: var(--logo-color-left);
+  }
 }

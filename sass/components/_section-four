@@ -1,4 +1,10 @@
 .section--four {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
   background-color: var(--section-team-color);
 }
 
@@ -65,15 +71,6 @@
   margin-bottom: 50px;
   padding: 0;
   color: var(--secondary-color);
-}
-
-.section--four {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-top: 0;
 }
 
 .section--four__list {

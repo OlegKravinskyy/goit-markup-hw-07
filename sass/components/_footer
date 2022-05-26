@@ -22,13 +22,6 @@
   color: var(--logo-color-two);
 }
 
-.footer__adress-text {
-  font-style: normal;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--logo-color-two);
-}
-
 .footer__adress-link {
   font-style: normal;
   line-height: 1.71;
@@ -104,10 +97,6 @@
   padding-right: 13px;
   background-color: var(--logo-color-left);
   color: var(--logo-color-two);
-}
-
-.footer__icon {
-  margin-left: 10px;
 }
 
 .footer__soc-list {
