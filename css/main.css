@@ -306,7 +306,7 @@ ol {
   color: var(--main-color);
 }
 
-.modal-__comment {
+.modal__comment {
   display: flex;
   flex-direction: column;
   font-size: 12px;
@@ -558,18 +558,15 @@ ol {
 .section--four__img {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--logo-color-two);
 }
 
 .section--four__img-block {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.section--four__img {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  background-color: var(--logo-color-two);
 }
 
 .section--four__soc-list {
@@ -586,20 +583,20 @@ ol {
   transition: background-color var(--main-transition-time) var(--cubic), fill var(--main-transition-time) var(--cubic);
 }
 
-.section--four__soc-item + .section--four__soc-item {
-  margin-left: 10px;
-}
-
-.section__soc-icon {
-  fill: var(--color-icon);
-}
-
 .section--four__soc-link:hover {
   background-color: var(--logo-color-left);
 }
 
 .section--four__soc-link:hover .section__soc-icon {
   fill: var(--logo-color-two);
+}
+
+.section--four__soc-item + .section--four__soc-item {
+  margin-left: 10px;
+}
+
+.section__soc-icon {
+  fill: var(--color-icon);
 }
 
 .section--four__title {
@@ -699,6 +696,13 @@ ol {
   color: var(--logo-color-two);
 }
 
+.footer__adress-text {
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--logo-color-two);
+}
+
 .footer__adress-link {
   font-style: normal;
   line-height: 1.71;
@@ -787,20 +791,20 @@ ol {
   transition: background-color var(--main-transition-time) var(--cubic), fill var(--main-transition-time) var(--cubic);
 }
 
-.footer__soc-item + .footer__soc-item {
-  margin-left: 10px;
-}
-
-.footer__soc-icon {
-  fill: var(--color-icon);
-}
-
 .footer__soc-link:hover {
   background-color: var(--logo-color-left);
 }
 
 .footer__soc-link:hover .footer__soc-icon {
   fill: var(--logo-color-two);
+}
+
+.footer__soc-item + .footer__soc-item {
+  margin-left: 10px;
+}
+
+.footer__soc-icon {
+  fill: var(--color-icon);
 }
 
 .footer__soc-link {
@@ -853,11 +857,16 @@ ol {
   display: flex;
 }
 
-.portfolio__flex-element {
-  width: 370px;
+.portfolio__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio__item:nth-child(-n + 6) {
+  margin-bottom: 30px;
 }
 
 .portfolio__flex-element {
+  width: 370px;
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   transition: box-shadow var(--main-transition-time) var(--cubic);
@@ -867,12 +876,9 @@ ol {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio__item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.portfolio__item:nth-child(-n + 6) {
-  margin-bottom: 30px;
+.portfolio__flex-element:hover .portfolio__overley {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .portfolio__flex-item {
@@ -898,10 +904,24 @@ ol {
 }
 
 .portfolio__btn-style {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
+  background: var(--section-team-color);
+  border-radius: 4px;
+  color: var(--secondary-color);
+  transition: background-color var(--main-transition-time) var(--cubic), color var(--main-transition-time) var(--cubic);
+}
+
+.portfolio__btn-style:hover {
+  background-color: var(--logo-color-left);
+  color: var(--logo-color-two);
 }
 
 .portfolio__text {
@@ -919,25 +939,8 @@ ol {
   color: var(--main-color);
 }
 
-.portfolio__btn-style {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  background: var(--section-team-color);
-  border-radius: 4px;
-  color: var(--secondary-color);
-  transition: background-color var(--main-transition-time) var(--cubic), color var(--main-transition-time) var(--cubic);
-}
-
 .portfolio__img-block {
   display: block;
-}
-
-.portfolio__btn-style:hover {
-  background-color: var(--logo-color-left);
-  color: var(--logo-color-two);
 }
 
 .portfolio__technokryak {
@@ -964,10 +967,5 @@ ol {
   height: 168px;
   margin: 63px 24px 63px 24px;
   color: var(--logo-color-two);
-}
-
-.portfolio__flex-element:hover .portfolio__overley {
-  transform: translateY(0);
-  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */

@@ -16,19 +16,17 @@
 .section--four__img {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--logo-color-two);
 }
 
 .section--four__img-block {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.section--four__img {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  background-color: var(--logo-color-two);
 }
 
 .section--four__soc-list {
@@ -44,6 +42,14 @@
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color var(--main-transition-time) var(--cubic),
     fill var(--main-transition-time) var(--cubic);
+
+  &:hover {
+    background-color: var(--logo-color-left);
+  }
+
+  &:hover .section__soc-icon {
+    fill: var(--logo-color-two);
+  }
 }
 
 .section--four__soc-item + .section--four__soc-item {
@@ -52,14 +58,6 @@
 
 .section__soc-icon {
   fill: var(--color-icon);
-}
-
-.section--four__soc-link:hover {
-  background-color: var(--logo-color-left);
-}
-
-.section--four__soc-link:hover .section__soc-icon {
-  fill: var(--logo-color-two);
 }
 
 .section--four__title {

@@ -6,10 +6,10 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--secondary-color);
-}
 
-.footer .container {
-  display: flex;
+  .container {
+    display: flex;
+  }
 }
 
 .footer__logo {
@@ -18,6 +18,13 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo-color-two);
+}
+
+.footer__adress-text {
+  font-style: normal;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--logo-color-two);
 }
@@ -112,6 +119,14 @@
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color var(--main-transition-time) var(--cubic),
     fill var(--main-transition-time) var(--cubic);
+
+  &:hover {
+    background-color: var(--logo-color-left);
+  }
+
+  &:hover .footer__soc-icon {
+    fill: var(--logo-color-two);
+  }
 }
 
 .footer__soc-item + .footer__soc-item {
@@ -120,14 +135,6 @@
 
 .footer__soc-icon {
   fill: var(--color-icon);
-}
-
-.footer__soc-link:hover {
-  background-color: var(--logo-color-left);
-}
-
-.footer__soc-link:hover .footer__soc-icon {
-  fill: var(--logo-color-two);
 }
 
 .footer__soc-link {
