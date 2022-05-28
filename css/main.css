@@ -485,7 +485,7 @@ ol {
   color: var(--main-color);
 }
 
-.section--three {
+.section-three {
   display: block;
   font-weight: 700;
   font-size: 36px;
@@ -495,16 +495,16 @@ ol {
   color: var(--secondary-color);
 }
 
-.section--three__img {
+.section-three__img {
   position: relative;
   line-height: 0;
 }
 
-.section--three__img:not(:last-child) {
+.section-three__img:not(:last-child) {
   margin-right: 30px;
 }
 
-.section--three__list {
+.section-three__list {
   display: flex;
 }
 
@@ -540,7 +540,7 @@ ol {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.section--four {
+.section-four {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -550,12 +550,12 @@ ol {
   background-color: var(--section-team-color);
 }
 
-.section--four__list {
+.section-four__list {
   display: flex;
   margin-left: -30px;
 }
 
-.section--four__img {
+.section-four__img {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -563,18 +563,18 @@ ol {
   background-color: var(--logo-color-two);
 }
 
-.section--four__img-block {
+.section-four__img-block {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.section--four__soc-list {
+.section-four__soc-list {
   display: flex;
   justify-content: center;
 }
 
-.section--four__soc-link {
+.section-four__soc-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -583,15 +583,15 @@ ol {
   transition: background-color var(--main-transition-time) var(--cubic), fill var(--main-transition-time) var(--cubic);
 }
 
-.section--four__soc-link:hover {
+.section-four__soc-link:hover {
   background-color: var(--logo-color-left);
 }
 
-.section--four__soc-link:hover .section__soc-icon {
+.section-four__soc-link:hover .section__soc-icon {
   fill: var(--logo-color-two);
 }
 
-.section--four__soc-item + .section--four__soc-item {
+.section-four__soc-item + .section-four__soc-item {
   margin-left: 10px;
 }
 
@@ -599,7 +599,7 @@ ol {
   fill: var(--color-icon);
 }
 
-.section--four__title {
+.section-four__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -610,11 +610,11 @@ ol {
   color: var(--secondary-color);
 }
 
-.section--four__list {
+.section-four__list {
   background-color: var(--section-team-color);
 }
 
-.section--four__name {
+.section-four__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -624,7 +624,7 @@ ol {
   color: var(--secondary-color);
 }
 
-.section--four__text {
+.section-four__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -634,22 +634,22 @@ ol {
   color: var(--main-color);
 }
 
-.section--four__sign {
+.section-four__sign {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.section--four__soc-link {
+.section-four__soc-link {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.section--clients__list {
+.section-clients__list {
   display: flex;
 }
 
-.section--clients__item {
+.section-clients__item {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -663,13 +663,24 @@ ol {
   transition: fill var(--main-transition-time) var(--cubic), border-color var(--main-transition-time) var(--cubic);
 }
 
-.section--clients__item:not(:last-child) {
+.section-clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.section--clients__item:hover {
+.section-clients__item:hover {
   border-color: var(--logo-color-left);
   fill: var(--logo-color-left);
+}
+
+.section-clients__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  padding: 0;
+  color: var(--secondary-color);
 }
 
 .footer {
@@ -811,6 +822,16 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer__logo-left {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+  color: var(--logo-color-left);
 }
 
 .portfolio {

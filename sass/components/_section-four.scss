@@ -1,4 +1,4 @@
-.section--four {
+.section-four {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -8,12 +8,12 @@
   background-color: var(--section-team-color);
 }
 
-.section--four__list {
+.section-four__list {
   display: flex;
   margin-left: -30px;
 }
 
-.section--four__img {
+.section-four__img {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
 
@@ -23,18 +23,18 @@
   background-color: var(--logo-color-two);
 }
 
-.section--four__img-block {
+.section-four__img-block {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.section--four__soc-list {
+.section-four__soc-list {
   display: flex;
   justify-content: center;
 }
 
-.section--four__soc-link {
+.section-four__soc-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -52,7 +52,7 @@
   }
 }
 
-.section--four__soc-item + .section--four__soc-item {
+.section-four__soc-item + .section-four__soc-item {
   margin-left: 10px;
 }
 
@@ -60,7 +60,7 @@
   fill: var(--color-icon);
 }
 
-.section--four__title {
+.section-four__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -71,11 +71,11 @@
   color: var(--secondary-color);
 }
 
-.section--four__list {
+.section-four__list {
   background-color: var(--section-team-color);
 }
 
-.section--four__name {
+.section-four__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -85,7 +85,7 @@
   color: var(--secondary-color);
 }
 
-.section--four__text {
+.section-four__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -95,12 +95,12 @@
   color: var(--main-color);
 }
 
-.section--four__sign {
+.section-four__sign {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.section--four__soc-link {
+.section-four__soc-link {
   display: flex;
   justify-content: center;
   align-items: center;
